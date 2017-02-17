@@ -1,0 +1,31 @@
+{
+  "name": "myFirstExtension",
+  "description": "",
+  "version": "0.0.1",
+  "publisher": "",
+  "engines": {
+    "vscode": "^1.5.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.sayHello"
+  ],
+  "main": "./out/src/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.sayHello",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.32",
+    "@types/node": "^6.0.40",
+    "mocha": "^2.3.3",
+    "vscode": "^1.5.0",
+    "ws": "^2.0.3"
+  }
+}
